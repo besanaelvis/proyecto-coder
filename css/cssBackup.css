@@ -1,68 +1,88 @@
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
 }
 
-@media screen and (min-width:340px) and (orientation:landscape){
-}
-@media screen and (max-width:992px) and (orientation:landscape){
-}
-@media screen and (min-width:1201px) and (orientation:landscape){
-} 
-
-
-.container-fluid{
-    background-color: #ded5d5;
-}
-.navbar{
-    margin:10px;
-    text-align:left;
-    filter: brightness(1.2);
-    mix-blend-mode: multiply;
+/*media queries*/
+/*mobile*/
+@media screen and (max-width: 640px) {
+    body {
+        background-color: #FF0A7C;
+    }
 }
 
-.titulo{
-    font-family: "sinkin-sans.otf";
-    src: url('../fonts/sinkin-sans/SinkinSans-600SemiBold.otf');
-    text-decoration: none;
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    body {
+        background-color: beige;
+    }
+}
+
+/*tablet*/
+
+@media screen and (min-width: 1280px) {
+    body {
+        background-color: blue;
+    }
+}
+/*desktop*/
+
+body {
+    /*background: linear-gradient(90deg, rgb(10, 10, 13) 0%, rgb(106, 106, 112) 76%, rgba(123, 140, 144, 1) 100%);*/
+    overflow-x: hidden;
+    background-image: url(../img/fondobody7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Comienza el header*/
+header {
+    width: auto;
+    height: 170px;
+    background-color: #101010;
+}
+
+/*titulo*/
+.logo_container h1 {
+    color: white;
     text-align: center;
-    margin: auto;
+    font-family: 'Montserrat';
+    font-size: 55px;
+    font-weight: 100;
 }
+
+.logo_container h1 span {
+    font-weight: 800;
+    color: yellow;
+}
+
+/*PAGES*/
+.menu {
+    text-align: right;
+    font-family: 'Montserrat';
+}
+
+.menu li {
+    margin-right: 22px;
+    display: inline;
+}
+/*Acá termina el header*/
+
 
 /*carousel*/
-.carousel{
-    margin: 75px;;
-    width:90%;
-    height:;
-    text-align: center;
-}
-
-/*Contacto*/
-.comentarios{
-    margin: 350px;
-    display: center;
-    margin-left: center;
-    margin-right: center;
-}
-
-/*barra header*/
-.nav{
-    justify-content: center;
-}
-
-/*Ysin embargo - indumentaria femenina*/
-h1 {
-    color: rgb(9, 9, 9);
-        margin: 70px;
-    font-family: "Pacifico.ttf";
-    src: url('../fonts/Pacifico.ttf');
-    vertical-align: top;
+.main{
+    display: flex;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 
-@font-face{
-    font-family:"KaushanScript-Regular.otf";
+@font-face {
+    font-family: "KaushanScript-Regular.otf";
     src: url('../fonts/KaushanScript-Regular.otf');
 }
 
@@ -71,120 +91,85 @@ h1 {
     src: url('../fonts/sinkin-sans/SinkinSans-600SemiBold.otf');
 }
 
-
-.container {
-    margin: 10px;
-    width: 25vw;
-    height: auto;
+footer {
+    width: 100vw;
+    height: 200px;
+    display: block;
+    background: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    padding-top: 10px;
+    color: #fff;
 }
 
-.caja {
-    background-color: rgb(243, 110, 219);
-    width: 150%;
-    height: auto;
-    overflow: auto;
-    margin-top: 100px;
-    margin-right: 30px;
-    margin-bottom: 200px;
-    margin-left: 50px;
-    margin: 100px 100px 200px 50px;
-    padding: 50px;
-    border: 2px solid black;
+.footer-contenido {
+    word-spacing: 10px;
 }
 
-.otracaja {
-    width: 75vw;
-    padding: 200px 50px;
-    margin: 100px 100px 200px 50px;
-    background-color: #ff0bc6;
-    border-top: 5px solid grey;
-    border-right: 5px solid rgb(234, 234, 158);
-    border-bottom: 5px solid rgb(240, 204, 136);
-    border-left: 2px solid grey;
-}
-
-.caja {
-    width: 75vw;
-    padding: 200px 50px;
-    margin: 100px 100px 200px 50px;
-    background-color: #FF0A7C(185, 185, 243);
-    border-top: 10px solid grey;
-    border-right: 5px solid rgb(234, 234, 158);
-    border-bottom: 10px solid rgb(240, 204, 136);
-    border-left: 2px solid grey;
-}
-
-.cajahijo {
-    background-color: #FF0A7C;
+/*seguinos en las redes*/
+.footer-contenido h3 {
     text-align: center;
-    width: 40%;
+    font-size: 1.6rem;
+    font-weight: 45px;
 }
 
-.menu li {
-    display: inline;
-    text-align: center;
-    border: 1px solid#FF0A7C(211, 243, 163);
-    padding: 3px;
-    background-color: #FF0A7C;
+/*derechos reservados*/
+.footer-bottom {
+    background: rgb(0, 0, 0);
+    margin-top: 50px;
 }
 
-.formulario2 {
-    text-align: center;
-    padding: 1px 1px;
-    margin: 10px 10px 10px 2px;
-}
-
-.body {
-    background-color: #ba5fef;
-    padding: 120px 50px;
+/*derechos reservados*/
+.footer-bottom p {
+    font-size: 15px;
+    word-spacing: 2px;
     text-align: center;
 }
 
-/*pie de página*/
-.pie {
-    background-color: #696868;
-    padding: 100px 50px;
+/*derechos reservados*/
+.footer-bottom span {
+    text-transform: uppercase;
+    color: yellow;
+}
+
+/*logos*/
+.redes {
+    margin-top: 10px;
     text-align: center;
-    height: auto;
-    width: auto;
+    letter-spacing: 35px;
 }
 
-/* Principal */
-.formulario1 {
-    background: url(../img/banner1.jpg) no-repeat;
-    background-size:cover;
-    padding: 160px 20px;
-    text-align: end;
+/*pages comentarios /contactos*/
+.comentarios {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 600px;
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: rgb(255, 255, 255);
 }
 
-/*Clase de botones*/
-.menu1 {
-    padding: 10px 0px;
+.logo_container h2 {
+    font-family: "KaushanScript-Regular.otf";
+    color: white;
     text-align: center;
 }
 
-.ysinembargo {
-    text-align: center;
-    background-color: black;
+.row {
+    float: left;
+    display: flex;
+    padding-left: 330px;
+    padding-top: 40px;
 }
 
-
-.derechos {
-    text-align: center;
-    color: #000;
-    
+.row1 {
+    display: flex;
+    margin-left: auto;
+    padding-top: 40px;
 }
 
-/*logo insta*/
-.insta {
-    height: 100px;
-    width: auto;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-}
-.face{
-    height: 50px;
-    width: auto;
-    filter: brightness(1.5);
-    mix-blend-mode:multiply;
+.caption h3 {
+    font-family: "Montserrat";
+    color: #101010;
+    font-size: large;
+    text-align: left;
 }

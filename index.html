@@ -5,117 +5,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio de Indumentaria Femenina">
+    <meta name="keywords" content="Jeans, Buzos, Camisas, Remeras, Botas">
     <title>Y sin embargo - indumentaria femenina </title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--Cabecera-->
-    <div class="header">
-        <div class="inner_header">
-            <div class="logo_container">
-                <h1>Y SIN<span> EMBARGO</span></h1>
-                <div>
-                </div>
-            </div>
-            <ul class="menu1">
-                <a href="../pages/contacto.html"><button type="button" class="btn btn-outline-light">Contacto</button></a>
-                <a href="../pages/empresa.html"><button type="button" class="btn btn-outline-light">Empresa</button></a>
-                <a href="../pages/shop.html"><button type="button" class="btn btn-outline-light">Shop</button></a>
-                <a href="../pages/productos.html"><button type="button" class="btn btn-outline-light">Productos</button></a>
-            </ul>
-        </div>
-    </div>
+    <header>
+        <!--Cabecera-->
+                <div class="logo_container">
+                    <h1>Y SIN<span> EMBARGO</span></h1>
+                    <h2>Venta indumentaria femenina</h2>
+                    </div>
+                <ul class="menu">
+                    <li><a href="./pages/contacto.html"><button type="button"
+                                class="btn btn-outline-light">Contacto</button></a></li>
+                    <li><a href="./pages/empresa.html"><button type="button"
+                                class="btn btn-outline-light">Empresa</button></a></li>
+                    <li><a href="./pages/shop.html"><button type="button"
+                                class="btn btn-outline-light">Shop</button></a></li>
+                    <li><a href="./pages/productos.html"><button type="button"
+                                class="btn btn-outline-light">Productos</button></a></li>
+                </ul>
+    </header>
 
     <!--Fin de cabecera-->
 
-
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div id="carousel" class="carousel-item active">
-                <img src="./img/ropa.elegante.jpg" class="d-block w-100" alt="1">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/ropa.elegante.jpg" class="d-block w-100" alt="2">
-            </div>
-            <div class="carousel-item">
-                <img src="./img/ropa.elegante.jpg" class="d-block w-100" alt="3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
-    </header>
-
+    
     <!-- Contenido de la página principal-->
-
+<!--Carousel-->
     <main class="main">
-        <h3>Bienvenidos</h3>
-
-        <div class="container">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Porro tenetur id velit dolorem voluptas enim consectetur accusantium tempora sed?
-                Omnis tenetur aut ratione possimus officia numquam sint consequuntur tempora nesciunt.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quod maiores.
-                Repudiandae quibusdam delectus voluptatibus iste quo voluptate quae maiores,
-                harum, corporis dolorem unde error culpa odit aspernatur molestias numquam!</p>
-        </div>
-
-        <form class="formulario2">
-            <fieldset>
-                <legend>Talle de remera</legend>
-                <select name="talles" class="formulario2">
-                    <option value="S">S</option>
-                    <option value="L">L</option>
-                    <option value="M">M</option>
-                    <option value="XL">XL</option>
-                    <option value="XL">XXL</option>
-                </select>
-            </fieldset>
-
-
-            <div class="otracaja">
-                <p><img src="./img/coleccion.jpg" alt="nueva coleccion"></p>
-            </div>
-
-            <div class="caja">
-                <div class="cajahijo">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, nobis!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, est?</p>
+        <div id="carouselExampleControls" height class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/ropa.elegante.jpg" class="d-block w-100" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/elegante.jpg" class="d-block w-100" alt="2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/ropa.elegante.jpg" class="d-block w-100" alt="3">
                 </div>
             </div>
-        </form>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
     </main>
     <!-- Fin del contenido de la página principal-->
-    
-<!--inicio píe de página-->
+
+    <!--inicio pie de página-->
     <footer>
         <div class="footer-contenido">
             <h3>SEGUINOS EN LAS REDES</h3>
         </div>
-            <div class="inner_footer">
-                <div class="redes">
-                    <a href="https://instagram.com/ysinembargo_junin"><img src="./img/13.jpg" alt="insta" height="92" width="92"></a>
-                    <a href="https://www.facebook.com/ysinembargojunin"><img src="./img/12.jpg" alt="face" height="62" width="62"></a>
-                </div>
+        <div class="inner_footer">
+            <div class="redes">
+                <a href="https://instagram.com/ysinembargo_junin"><img src="./img/13.jpg" alt="insta" height="92"
+                        width="92"></a>
+                <a href="https://www.facebook.com/ysinembargojunin"><img src="./img/12.jpg" alt="face" height="62"
+                        width="62"></a>
             </div>
-            <div class="footer-bottom">
-                <p>Derechos Reservados &COPY;2022 by <span> Besana Elvis.</span></p>
-            
+        </div>
+        <div class="footer-bottom">
+            <p>Derechos Reservados &COPY;2022 by <span> Besana Elvis.</span></p>
+
         </div>
     </footer>
-
+<!--Fín pie de página-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
