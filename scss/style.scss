@@ -26,6 +26,7 @@
         background-color: blue;
     }
 }
+
 /*desktop*/
 
 body {
@@ -67,11 +68,12 @@ header {
     margin-right: 22px;
     display: inline;
 }
+
 /*Acá termina el header*/
 
 
 /*carousel*/
-.main{
+.main {
     display: flex;
     margin: 30px;
     margin-left: auto;
@@ -154,46 +156,10 @@ footer {
     text-align: center;
 }
 
-.row {
-    float: left;
-    display: flex;
-    padding-left: 330px;
-    padding-top: 40px;
-}
-
-.row1 {
-    display: flex;
-    margin-left: auto;
-    padding-top: 40px;
-}
-
 .caption h3 {
     font-family: "Montserrat";
     color: #101010;
-    font-size: large;
+    font-size:small;
     text-align: left;
 }
-.ubicacion div h1{
-    font-family: "Montserrat";
-    display:flex;
-}
 
-/*variables scss*/
-@import 'variables';
-
-.ubicacion h1{
-    background-color: green;
-    width:$x1/2;
-    height: $md/3;
-}
-@each $redsocial in facebook,instagram{
-    .#{$redsocial}-icono{
-        background-image: url('/img/10.jpg');
-        height: 520px;
-        }
-}
-@each $facebook, $#3b5998 in $color-logo-redes{
-    .inner_footer .redes#{$facebook}{
-        background-color:$#3b5998;
-    }
-}

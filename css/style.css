@@ -127,26 +127,8 @@ footer {
   color: white;
   text-align: center; }
 
-.row {
-  float: left;
-  display: flex;
-  padding-left: 330px;
-  padding-top: 40px; }
-
-.row1 {
-  display: flex;
-  margin-left: auto;
-  padding-top: 40px; }
-
 .caption h3 {
   font-family: "Montserrat";
   color: #101010;
-  font-size: large;
+  font-size: small;
   text-align: left; }
-
-.ubicacion div h1 {
-  font-family: "Montserrat";
-  display: flex; }
-
-.ubicacion {
-  background-color: green; }
