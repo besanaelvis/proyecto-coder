@@ -173,3 +173,19 @@ footer {
     font-size: large;
     text-align: left;
 }
+.row {
+    display: flex;
+    padding-left: 230px;
+    padding-top: 40px;
+}
+
+.row2 {
+    display: flex;
+    transform: translate(850px, -508px);
+    padding-top: 40px;
+}
+
+.promo{
+  text-align: center;
+  padding-bottom: 100px;
+}
